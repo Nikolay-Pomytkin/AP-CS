@@ -3,7 +3,7 @@
 
 **[Base Class](/base_class)** - Class hierearchy for changing bases
 
-**[Transportation Class](/transportation_class)**
+**[Transportation Class](/transportation_class)** - Class hierearchy for Transportation
 
-**[Shape Class](/shape_class)**
+**[Shape Class](/shape_class)** - Shape Class hierarchy
 
