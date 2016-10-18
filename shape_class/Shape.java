@@ -25,6 +25,14 @@ public class Shape {
 		return color;
 	}
 	
+	public void setName(String n){
+		name = n;
+	}
+	
+	public void setColor(String c){
+		color = c;
+	}
+	
 	public String toString(){
 		return "Name: " + name + ", Type: " + type() + ", Color: " + getColor() + ", Area: " + calcArea();
 	}
