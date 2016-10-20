@@ -1,39 +1,41 @@
 package shape;
 
-public class Shape {
+public abstract class Shape {
   private String name;
   private String color;
   
-  public Shape(n, c){
+  public Shape(){
+    name = "Shape";
+    color = "White";
+  }
+  
+  public Shape(String n, String c){
     name = n;
     color = c;
   }
-  
-  public Shape(){
-		name = "Shape";
-		color = "White";
-	}
-	
-	public abstract double calcArea;
-	public abstract String type;
-  
-	public String getName(){
-		return name;
-	}
+  	
+    public abstract double calcArea();
+    public abstract String type();
+    public abstract double calcPerimeter();
 
-	public String getColor(){
-		return color;
-	}
-	
-	public void setName(String n){
-		name = n;
-	}
-	
-	public void setColor(String c){
-		color = c;
-	}
-	
-	public String toString(){
-		return "Name: " + name + ", Type: " + type() + ", Color: " + getColor() + ", Area: " + calcArea();
-	}
+    public String getName(){
+        return name;
+    }
+
+    public String getColor(){
+        return color;
+    }
+
+    public void setName(String n){
+        name = n;
+    }
+
+    public void setColor(String c){
+        color = c;
+    }
+
+    public String toString(){
+            return "Name: " + getName() + ", Type: " + type() + ", Color: " + getColor() + ", Area: " + calcArea() + ", Perimeter: "+ calcPerimeter();
+    }
+
 }
